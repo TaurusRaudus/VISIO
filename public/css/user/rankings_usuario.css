@@ -1,0 +1,175 @@
+.rankings-container {
+    /* max-width: 1100px; */ /* Elimina esta línea si existe */
+    flex: 1 1 0;
+    margin: 40px 0;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 18px rgba(44,62,80,0.09);
+    padding: 32px 28px 24px 28px;
+    text-align: center;
+    min-width: 0; /* Para evitar overflow en flex */
+}
+.ranking-buttons {
+    margin-bottom: 28px;
+}
+.ranking-buttons button {
+    padding: 10px 28px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    background: #eaeaea;
+    color: #2c3e50;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 1.1em;
+    transition: background 0.2s;
+}
+.ranking-buttons .active, .ranking-buttons button:hover {
+    background: #3498db;
+    color: #fff;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 28px;
+    margin-top: 18px;
+}
+.galeria-item {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 1px 8px rgba(44,62,80,0.07);
+    padding: 18px 10px 18px 10px;
+    text-align: center;
+    position: relative;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.galeria-thumb {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: #f0f0f0;
+}
+.galeria-item h3 {
+    font-size: 1.08em;
+    color: #2c3e50;
+    margin: 10px 0 6px 0;
+    font-weight: 600;
+    min-height: 2.2em;
+    overflow: hidden;
+}
+.puesto {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #3498db;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    box-shadow: 0 1px 4px rgba(44,62,80,0.09);
+}
+.dato-ranking {
+    margin-top: 10px;
+    font-size: 1.05em;
+    color: #217dbb;
+    font-weight: 500;
+}
+.galeria-vacio {
+    background: #f3f3f3;
+    color: #aaa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sin-contenido {
+    margin-top: 60px;
+    font-size: 1.1em;
+    color: #bbb;
+}
+.btn {
+    padding: 10px 24px;
+    border-radius: 8px;
+    border: none;
+    background: #3498db;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 18px;
+}
+.btn:hover {
+    background: #217dbb;
+}
+/* Panel de filtros a la derecha en rankings */
+.rankings-layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+    max-width: 1300px; /* El ancho máximo ahora es del layout completo */
+    margin: 0 auto;
+    width: 100%;
+}
+.filtros-ranking {
+    width: 220px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(44,62,80,0.07);
+    padding: 18px 18px 18px 24px;
+    min-height: 180px;
+    margin-top: 40px;
+    align-self: flex-start;
+    position: relative;
+}
+.filtros-ranking h3 {
+    font-size: 1em;
+    color: #2980b9;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.filtros-tipo-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.radio-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 2px;
+    user-select: none;
+}
+.radio-btn input[type="radio"] {
+    accent-color: #2980b9;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.radio-btn span {
+    color: #2c3e50;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.radio-btn input[type="radio"]:checked + span {
+    color: #2980b9;
+    font-weight: bold;
+}
+@media (max-width: 1000px) {
+    .rankings-layout { flex-direction: column; gap: 0; }
+    .filtros-ranking { width: 100%; margin: 24px 0 0 0; }
+}

@@ -1,0 +1,35 @@
+.busqueda-container {
+    max-width: 400px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 32px;
+}
+.busqueda-container label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 500;
+}
+.busqueda-container input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.busqueda-container .btn {
+    margin-top: 18px;
+    padding: 10px 18px;
+    border-radius: 5px;
+    border: none;
+    background: #3498db;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+    cursor: pointer;
+}
+.busqueda-container .btn:hover {
+    background: #217dbb;
+}

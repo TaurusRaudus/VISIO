@@ -1,0 +1,297 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e67e22;
+    --light-color: #f9f9f9;
+    --border-radius: 8px;
+}
+
+.busqueda-container {
+    background: var(--light-color);
+    max-width: 700px;
+    /* margin: 40px auto; */ /* QUITA esta línea */
+    margin: 0 auto;           /* Centra horizontalmente */
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 12px rgba(44, 62, 80, 0.08);
+    padding: 32px 36px;
+    flex: 1 1 0;
+}
+
+.busqueda-container h1 {
+    color: var(--primary-color);
+    margin-bottom: 18px;
+}
+
+.busqueda-container h2 {
+    color: var(--secondary-color);
+    margin-top: 30px;
+}
+
+.busqueda-container p {
+    margin: 8px 0;
+    color: var(--secondary-color);
+}
+
+.contenido-item {
+    background: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 1px 6px rgba(44, 62, 80, 0.07);
+    padding: 18px 20px;
+    margin-bottom: 18px;
+}
+
+.btn, .btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: var(--border-radius);
+    border: none;
+    font-weight: 500;
+    margin: 10px 5px 0 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn-secondary {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.btn:hover, .btn-primary:hover, .btn-secondary:hover {
+    background: #217dbb;
+}
+
+.paginacion {
+    margin-top: 24px;
+    text-align: center;
+}
+.paginacion .btn {
+    margin: 0 2px;
+    min-width: 36px;
+}
+
+@media (max-width: 600px) {
+    .busqueda-container {
+        padding: 16px 6px;
+    }
+}
+
+/* Estilos para la galería de contenidos */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 24px;
+    margin: 24px 0;
+}
+
+.galeria-item {
+    background: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 1px 6px rgba(44,62,80,0.07);
+    padding: 12px 8px 16px 8px;
+    text-align: center;
+    transition: box-shadow 0.2s;
+}
+
+.galeria-item:hover {
+    box-shadow: 0 4px 16px rgba(44,62,80,0.13);
+}
+
+/* Aqui es donde definimos el tamaño de las imágenes */
+.galeria-thumb {
+    width: 100%;
+    max-width: 180px;   /* antes 120px */
+    max-height: 180px;  /* antes 120px */
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-bottom: 10px;
+    background: #f0f0f0;
+}
+
+.galeria-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px auto;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    background: #eaeaea;
+    color: #888;
+}
+
+.galeria-video::before {
+    content: "🎬";
+}
+
+.galeria-audio::before {
+    content: "🎵";
+}
+
+.galeria-otro::before {
+    content: "📄";
+}
+
+.galeria-titulo {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin-top: 6px;
+    font-weight: 500;
+    min-height: 2.2em;
+    overflow: hidden;
+}
+
+.main-layout {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px; /* Espacio debajo del header */
+}
+
+.sidebar-categorias {
+    width: 240px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(44,62,80,0.07);
+    padding: 18px 18px 18px 24px;
+    min-height: 300px;
+    margin-top: 0; /* Asegúrate de que sea 0 */
+    align-self: flex-start;
+    position: relative;
+}
+
+.sidebar-categorias h3 {
+    margin-top: 0;
+    color: #2980b9;
+    font-size: 1.1em;
+    margin-bottom: 12px;
+}
+
+.breadcrumb-categorias {
+    font-size: 0.98em;
+    margin-bottom: 10px;
+    word-break: break-word;
+}
+
+.breadcrumb-categorias a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.breadcrumb-categorias .active {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.breadcrumb-categorias a:hover {
+    text-decoration: underline;
+}
+
+.arbol-categorias {
+    list-style: none;
+    padding-left: 16px;
+    margin: 0;
+}
+
+.arbol-categorias .arbol-item {
+    margin-bottom: 6px;
+}
+
+/* Panel de filtros a la izquierda */
+.filtros-categoria {
+    width: 220px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(44,62,80,0.07);
+    padding: 18px 18px 18px 24px;
+    min-height: 180px;
+    margin-top: 0;
+    align-self: flex-start;
+    position: relative;
+    margin-right: 0;
+}
+.filtros-categoria h3 {
+    margin-top: 0;
+    color: #2980b9;
+    font-size: 1.1em;
+    margin-bottom: 12px;
+}
+.filtros-tipo {
+    margin-bottom: 10px;
+    text-align: left;
+}
+.filtros-tipo a {
+    text-decoration: none;
+    margin-right: 8px;
+}
+.filtros-tipo button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    background: #eaeaea;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-bottom: 8px;
+}
+.filtros-tipo .active, .filtros-tipo button:hover {
+    background: #2980b9;
+    color: #fff;
+}
+
+/* Panel de filtros vertical en sidebar */
+.filtros-categoria-vertical {
+    margin-top: 32px;
+    padding-top: 12px;
+    border-top: 1px solid #e0e0e0;
+}
+.filtros-categoria-vertical h3 {
+    font-size: 1em;
+    color: #2980b9;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.filtros-tipo-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.radio-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 2px;
+    user-select: none;
+}
+.radio-btn input[type="radio"] {
+    accent-color: #2980b9;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.radio-btn span {
+    color: #2c3e50;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.radio-btn input[type="radio"]:checked + span {
+    color: #2980b9;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .main-layout { flex-direction: column; padding-top: 0; }
+    .sidebar-categorias { width: 100%; margin-top: 24px; }
+    .filtros-categoria { width: 100%; margin-bottom: 18px; }
+}

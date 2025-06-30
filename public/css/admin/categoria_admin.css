@@ -1,0 +1,255 @@
+/* Archivo: public/css/admin/categoria_admin.css */
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f5f5f5;
+}
+
+/* Contenedor principal */
+.admin-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Layout de dos columnas: contenido y sidebar */
+.main-layout {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.main-content {
+  flex: 3;
+  margin-right: 20px;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+/* Encabezados */
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #007bff;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+/* Detalles de la categoría */
+.categoria-info p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Listado de contenidos (agrupados de 10 en 10) */
+.content-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.content-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+}
+
+.content-list li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.content-list img {
+  max-height: 50px;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+
+/* Paginación numérica */
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.pagination a.active,
+.pagination a:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* Sidebar para subcategorías */
+.subcat-sidebar {
+  border-left: 2px solid #ddd;
+  padding-left: 20px;
+}
+
+.subcat-sidebar h3 {
+  margin-top: 0;
+  color: #007bff;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.subcat-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.subcat-list li {
+  margin-bottom: 10px;
+}
+
+.subcat-list li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+  display: block;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.subcat-list li a:hover {
+  background-color: #e9e9e9;
+}
+
+/* Botón para agregar subcategoría */
+.add-subcat-btn {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.add-subcat-btn button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-subcat-btn button:hover {
+  background-color: #218838;
+}
+
+/* Botón eliminar categoría estilo admin */
+.btn-eliminar-categoria {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 12px;
+  transition: background 0.2s;
+}
+.btn-eliminar-categoria:hover {
+  background-color: #b52a37;
+}
+
+/* Galería de imágenes para los contenidos */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+.card {
+  width: 150px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  padding: 10px;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+}
+.card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.card h3 {
+  font-size: 1em;
+  margin: 0 0 6px 0;
+  word-break: break-word;
+}
+
+/* Breadcrumb estilo admin */
+.breadcrumb-admin {
+  font-size: 1em;
+  margin-bottom: 18px;
+  color: #007bff;
+  word-break: break-word;
+}
+.breadcrumb-admin a {
+  color: #007bff;
+  text-decoration: none;
+}
+.breadcrumb-admin .active {
+  font-weight: bold;
+  color: #333;
+}
+.breadcrumb-admin a:hover {
+  text-decoration: underline;
+}
+
+/* Botones de filtro tipo admin */
+.admin-filtros-tipo {
+  margin-bottom: 18px;
+}
+.admin-filtros-tipo-form {
+  display: flex;
+  gap: 10px;
+}
+.admin-filtro-btn {
+  padding: 7px 18px;
+  border-radius: 6px;
+  border: 1px solid #007bff;
+  background: #fff;
+  color: #007bff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.admin-filtro-btn.active,
+.admin-filtro-btn:hover {
+  background: #007bff;
+  color: #fff;
+}

@@ -1,0 +1,133 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f9fb;
+  margin: 0;
+  padding: 0;
+}
+
+.admin-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 32px 36px 24px 36px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 28px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+label {
+  font-weight: 500;
+  color: #34495e;
+}
+
+input[type="text"] {
+  padding: 8px 10px;
+  border: 1px solid #bfc9d1;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border 0.2s;
+}
+
+input[type="text"]:focus {
+  border: 1.5px solid #007bff;
+  outline: none;
+}
+
+button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 8px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+a button {
+  background: #6c757d;
+  margin-top: 0;
+}
+
+a button:hover {
+  background: #495057;
+}
+
+p {
+  text-align: center;
+  color: #c0392b;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+/* Barra de búsqueda y botones de acción (igual que admin.php) */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007bff;
+  padding: 16px 36px;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 32px;
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-section input[type="text"] {
+  border-radius: 4px;
+  border: 1px solid #bfc9d1;
+  padding: 7px 10px;
+  font-size: 1em;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-buttons button {
+  background: #fff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 7px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.action-buttons button:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+a.btn-volver {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+a.btn-volver button {
+  width: 100%;
+}

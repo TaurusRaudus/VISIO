@@ -1,0 +1,73 @@
+body {
+  background: #f7f9fb;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.confirm-container {
+  max-width: 400px;
+  margin: 80px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 32px 36px 24px 36px;
+  text-align: center;
+}
+
+.confirm-container h2 {
+  color: #c0392b;
+  margin-bottom: 18px;
+}
+
+.confirm-container p {
+  color: #2c3e50;
+  margin-bottom: 22px;
+}
+
+.confirm-container input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #bfc9d1;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-bottom: 18px;
+}
+
+.confirm-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn-confirm {
+  background: #c0392b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 22px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-confirm:hover {
+  background: #a93226;
+}
+
+.btn-cancel {
+  background: #6c757d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 22px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-cancel:hover {
+  background: #495057;
+}
